@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="sipcalculatorCss.css">
+        <script type="text/javascript" src="sipcalculatorJs.js"></script>
+    </head>
+    <body class="body-background">
+        <div class="header">Mutual Fund Investment Calculator</div>
+        <div class="page-container">
+            <div class="switch-container">
+                <div class="radio-button">
+                    <label for="sip">SIP</label>
+                    <input type="radio" checked name="checked" value="male">
+                    <label for="lumpsum">LumpSum</label>
+                    <input type="radio" name="checked" value="female">
+                </div>
+                <div class="dropdown">
+                    Currency
+                    <select onchange="currencyChange(this)" id="currency" class="currency">
+                        <!-- &#8377; -->
+                        <option value="&#8377;">INR</option>
+                        <option value="&#128176;">USD</option>
+                        <!-- &#x24; -->
+                    </select>
+            </div>
+        </div>
+            <div class="input-container">
+                <div>
+                    <div>Monthly Investment &#10067 </div>
+                    <br/>
+                    <div><input id="investment" type="number"/></div>
+                    <br/>
+                    <div>Number of Years &#10067</div>
+                    <br/>
+                    <div><input id="years" type="number"/></div> 
+                    <br/>
+                    <div>Expected Rate of Return &#10067</div>
+                    <br/>
+                    <div><input id="return-rate"  type="number"/></div> 
+                </div>
+            </div>
+            </br/>
+            <div class="btn-calculate">
+                <button type="button" onclick="calculateResult()">
+                    Calculate
+                </button>
+            </div>
+            </br/>
+              <div class="result-container">
+                    <div>Total Investment 💸</div>
+                    <br/>
+                    <div><span id="currency-change-1">&#8377;</span>&nbsp;<span id="total"></span></div>
+                    <br/>
+                    <div>Wealth Gained 💸</div>
+                    <br/>
+                    <div><span id="currency-change-2">&#8377;</span>&nbsp;<span id="wealth-gained"></span></div> 
+                    <br/>
+                    <div>Maturity Value 💸</div>
+                    <br/>
+                    <div><span id="currency-change-3">&#8377;</span>&nbsp;<span id="maturity-value"></span></div> 
+            </div>
+            <br/>
+            
+        </div>
+    </div>
+    </body>
+</html>
