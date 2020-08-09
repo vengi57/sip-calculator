@@ -17,8 +17,8 @@
                     Currency
                     <select onchange="currencyChange(this)" id="currency" class="currency">
                         <!-- &#8377; -->
-                        <option value="&#8377;">INR</option>
-                        <option value="&#128176;">USD</option>
+                        <option value="Rs">&#8377; &nbsp;INR</option>
+                        <option value="$">&#128176;USD</option>
                         <!-- &#x24; -->
                     </select>
             </div>
@@ -27,15 +27,15 @@
                 <div>
                     <div>Monthly Investment &#10067 </div>
                     <br/>
-                    <div><input id="investment" type="number"/></div>
+                    <div><input id="investment" type="text" onchange="commas(this)"/></div>
                     <br/>
                     <div>Number of Years &#10067</div>
                     <br/>
-                    <div><input id="years" type="number"/></div> 
+                    <div><input id="years" type="number"></div> 
                     <br/>
                     <div>Expected Rate of Return &#10067</div>
                     <br/>
-                    <div><input id="return-rate"  type="number"/></div> 
+                    <div><input id="return-rate"  type="text" onchange="percentage(this)")/></div> 
                 </div>
             </div>
             </br/>
@@ -48,15 +48,15 @@
               <div class="result-container">
                     <div>Total Investment 💸</div>
                     <br/>
-                    <div><span id="currency-change-1">&#8377;</span>&nbsp;<span id="total"></span></div>
+                    <div><span id="currency-change-1">Rs.</span>&nbsp;<span id="total"></span></div>
                     <br/>
                     <div>Wealth Gained 💸</div>
                     <br/>
-                    <div><span id="currency-change-2">&#8377;</span>&nbsp;<span id="wealth-gained"></span></div> 
+                    <div><span id="currency-change-2">Rs.</span>&nbsp;<span id="wealth-gained"></span></div> 
                     <br/>
                     <div>Maturity Value 💸</div>
                     <br/>
-                    <div><span id="currency-change-3">&#8377;</span>&nbsp;<span id="maturity-value"></span></div> 
+                    <div><span id="currency-change-3">Rs.</span>&nbsp;<span id="maturity-value"></span></div> 
             </div>
             <br/>
             
