@@ -9,9 +9,9 @@
             <div class="switch-container">
                 <div class="radio-button">
                     <label for="sip">SIP</label>
-                    <input type="radio" checked name="checked" value="male">
+                    <input type="radio" checked name="checked" value="SIP">
                     <label for="lumpsum">LumpSum</label>
-                    <input type="radio" name="checked" value="female">
+                    <input type="radio" name="checked" value="LumpSum">
                 </div>
                 <div class="dropdown">
                     Currency
@@ -45,19 +45,35 @@
                 </button>
             </div>
             </br/>
+            <div style="display: flex;">
+                <div class="result">Result :</div>
               <div class="result-container">
-                    <div>Total Investment 💸</div>
+                    <div>Monthly Investment for <span id="mode-1">SIP</span></div>
                     <br/>
-                    <div><span id="currency-change-1">Rs.</span>&nbsp;<span id="total"></span></div>
+                    <div><span>Rs.</span>&nbsp;<span id="input-1"></span></div>
                     <br/>
-                    <div>Wealth Gained 💸</div>
+                    <div>Number of Years <span id="mode-2">SIP</span></div>
                     <br/>
-                    <div><span id="currency-change-2">Rs.</span>&nbsp;<span id="wealth-gained"></span></div> 
+                    <div><span>Years:</span>&nbsp;<span id="input-2"></span></div> 
                     <br/>
-                    <div>Maturity Value 💸</div>
+                    <div>Expected Rate of Return <span id="mode-3">SIP</span></div>
                     <br/>
-                    <div><span id="currency-change-3">Rs.</span>&nbsp;<span id="maturity-value"></span></div> 
+                    <div><span>%:</span>&nbsp;<span id="input-3"></span></div> 
             </div>
+            <div class="result-container">
+                <div>Total Investment 💸</div>
+                <br/>
+                <div><span id="currency-change-1">Rs.</span>&nbsp;<span id="total"></span></div>
+                <br/>
+                <div>Wealth Gained 💸</div>
+                <br/>
+                <div><span id="currency-change-2">Rs.</span>&nbsp;<span id="wealth-gained"></span></div> 
+                <br/>
+                <div>Maturity Value 💸</div>
+                <br/>
+                <div><span id="currency-change-3">Rs.</span>&nbsp;<span id="maturity-value"></span></div> 
+        </div>
+    </div>
             <br/>
             
         </div>
